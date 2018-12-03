@@ -24,6 +24,11 @@
 		3A85AE8321B5B1130066842C /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7E21B5B1130066842C /* PresenterInterface.swift */; };
 		3A85AE8421B5B1130066842C /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7F21B5B1130066842C /* ViewInterface.swift */; };
 		3A85AE8521B5B1130066842C /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8021B5B1130066842C /* InteractorInterface.swift */; };
+		3A85AE8C21B5B3150066842C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8721B5B3150066842C /* Section.swift */; };
+		3A85AE8D21B5B3150066842C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8821B5B3150066842C /* APIError.swift */; };
+		3A85AE8E21B5B3150066842C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8921B5B3150066842C /* APIConstants.swift */; };
+		3A85AE8F21B5B3150066842C /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8A21B5B3150066842C /* ErrorMessage.swift */; };
+		3A85AE9021B5B3150066842C /* SportsMenListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8B21B5B3150066842C /* SportsMenListNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		3A85AE7E21B5B1130066842C /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
 		3A85AE7F21B5B1130066842C /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
 		3A85AE8021B5B1130066842C /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		3A85AE8721B5B3150066842C /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Section.swift; path = ../../../../rssNasa/rssNasa/Shared/Section.swift; sourceTree = "<group>"; };
+		3A85AE8821B5B3150066842C /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIError.swift; path = ../../../../rssNasa/rssNasa/Shared/APIError.swift; sourceTree = "<group>"; };
+		3A85AE8921B5B3150066842C /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIConstants.swift; path = ../../../../rssNasa/rssNasa/Shared/APIConstants.swift; sourceTree = "<group>"; };
+		3A85AE8A21B5B3150066842C /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorMessage.swift; path = ../../../../rssNasa/rssNasa/Shared/ErrorMessage.swift; sourceTree = "<group>"; };
+		3A85AE8B21B5B3150066842C /* SportsMenListNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SportsMenListNavigationController.swift; path = ../../../../rssNasa/rssNasa/Shared/SportsMenListNavigationController.swift; sourceTree = "<group>"; };
 		6BEE0EB6A412378CC2722818 /* Pods_HastenSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECC26F89F9E024FE20E0671 /* Pods-HastenSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSports.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HastenSports/Pods-HastenSports.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +136,7 @@
 		3A85AE6B21B5B0370066842C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3A85AE8621B5B2980066842C /* Shared */,
 				3A85AE7B21B5B1130066842C /* Base VIPER Interfaces V2 */,
 				3A85AE6C21B5B0490066842C /* SportsMenList */,
 			);
@@ -157,6 +168,18 @@
 			);
 			name = "Base VIPER Interfaces V2";
 			path = "../../../iOS-VIPER-Xcode-Templates-master/Base VIPER Interfaces V2";
+			sourceTree = "<group>";
+		};
+		3A85AE8621B5B2980066842C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3A85AE8921B5B3150066842C /* APIConstants.swift */,
+				3A85AE8821B5B3150066842C /* APIError.swift */,
+				3A85AE8A21B5B3150066842C /* ErrorMessage.swift */,
+				3A85AE8B21B5B3150066842C /* SportsMenListNavigationController.swift */,
+				3A85AE8721B5B3150066842C /* Section.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		4D1F0AD6A9134F79CFEA95E9 /* Pods */ = {
@@ -340,10 +363,15 @@
 				3A85AE8221B5B1130066842C /* UIStoryboardExtension.swift in Sources */,
 				3A85AE7521B5B0740066842C /* SportsMenListPresenter.swift in Sources */,
 				3A85AE7721B5B0740066842C /* SportsMenListInteractor.swift in Sources */,
+				3A85AE8F21B5B3150066842C /* ErrorMessage.swift in Sources */,
 				3A85AE8121B5B1130066842C /* BaseWireframe.swift in Sources */,
+				3A85AE8E21B5B3150066842C /* APIConstants.swift in Sources */,
 				3A85AE7621B5B0740066842C /* SportsMenListViewController.swift in Sources */,
+				3A85AE8C21B5B3150066842C /* Section.swift in Sources */,
+				3A85AE9021B5B3150066842C /* SportsMenListNavigationController.swift in Sources */,
 				3A85AE7421B5B0740066842C /* SportsMenListInterfaces.swift in Sources */,
 				3A85AE8321B5B1130066842C /* PresenterInterface.swift in Sources */,
+				3A85AE8D21B5B3150066842C /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
