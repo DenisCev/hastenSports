@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08E4F5E9088C5AA59130A93B /* Pods_HastenSports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEE0EB6A412378CC2722818 /* Pods_HastenSports.framework */; };
 		3A45291721B5A72E00AC425E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45291621B5A72E00AC425E /* AppDelegate.swift */; };
-		3A45291921B5A72E00AC425E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45291821B5A72E00AC425E /* ViewController.swift */; };
-		3A45291C21B5A72E00AC425E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A45291A21B5A72E00AC425E /* Main.storyboard */; };
 		3A45291E21B5A73000AC425E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A45291D21B5A73000AC425E /* Assets.xcassets */; };
 		3A45292121B5A73000AC425E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A45291F21B5A73000AC425E /* LaunchScreen.storyboard */; };
 		3A45292C21B5A73100AC425E /* HastenSportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45292B21B5A73100AC425E /* HastenSportsTests.swift */; };
+		3A45293721B5A81400AC425E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3A45293621B5A81400AC425E /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +26,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09B70067993383986CE08EF8 /* Pods-HastenSports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSports.release.xcconfig"; path = "Pods/Target Support Files/Pods-HastenSports/Pods-HastenSports.release.xcconfig"; sourceTree = "<group>"; };
 		3A45291321B5A72E00AC425E /* HastenSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HastenSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A45291621B5A72E00AC425E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A45291821B5A72E00AC425E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3A45291B21B5A72E00AC425E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A45291D21B5A73000AC425E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A45292021B5A73000AC425E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A45292221B5A73000AC425E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A45292721B5A73100AC425E /* HastenSportsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HastenSportsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A45292B21B5A73100AC425E /* HastenSportsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastenSportsTests.swift; sourceTree = "<group>"; };
 		3A45292D21B5A73100AC425E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A45293621B5A81400AC425E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6BEE0EB6A412378CC2722818 /* Pods_HastenSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECC26F89F9E024FE20E0671 /* Pods-HastenSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSports.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HastenSports/Pods-HastenSports.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E4F5E9088C5AA59130A93B /* Pods_HastenSports.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +62,12 @@
 		3A45290A21B5A72E00AC425E = {
 			isa = PBXGroup;
 			children = (
+				3A45293621B5A81400AC425E /* Podfile */,
 				3A45291521B5A72E00AC425E /* HastenSports */,
 				3A45292A21B5A73100AC425E /* HastenSportsTests */,
 				3A45291421B5A72E00AC425E /* Products */,
+				4D1F0AD6A9134F79CFEA95E9 /* Pods */,
+				AD203ADAF8A5120124826172 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				3A45291621B5A72E00AC425E /* AppDelegate.swift */,
-				3A45291821B5A72E00AC425E /* ViewController.swift */,
-				3A45291A21B5A72E00AC425E /* Main.storyboard */,
 				3A45291D21B5A73000AC425E /* Assets.xcassets */,
 				3A45291F21B5A73000AC425E /* LaunchScreen.storyboard */,
 				3A45292221B5A73000AC425E /* Info.plist */,
@@ -96,6 +100,23 @@
 			path = HastenSportsTests;
 			sourceTree = "<group>";
 		};
+		4D1F0AD6A9134F79CFEA95E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EECC26F89F9E024FE20E0671 /* Pods-HastenSports.debug.xcconfig */,
+				09B70067993383986CE08EF8 /* Pods-HastenSports.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD203ADAF8A5120124826172 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE0EB6A412378CC2722818 /* Pods_HastenSports.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A45293021B5A73100AC425E /* Build configuration list for PBXNativeTarget "HastenSports" */;
 			buildPhases = (
+				99D62D7F6528BA4D66CD0380 /* [CP] Check Pods Manifest.lock */,
 				3A45290F21B5A72E00AC425E /* Sources */,
 				3A45291021B5A72E00AC425E /* Frameworks */,
 				3A45291121B5A72E00AC425E /* Resources */,
+				1FE78E9F1FA19148E15AD26C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,9 +200,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A45293721B5A81400AC425E /* Podfile in Resources */,
 				3A45292121B5A73000AC425E /* LaunchScreen.storyboard in Resources */,
 				3A45291E21B5A73000AC425E /* Assets.xcassets in Resources */,
-				3A45291C21B5A72E00AC425E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,12 +215,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FE78E9F1FA19148E15AD26C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HastenSports/Pods-HastenSports-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HastenSports/Pods-HastenSports-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99D62D7F6528BA4D66CD0380 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HastenSports-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A45290F21B5A72E00AC425E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A45291921B5A72E00AC425E /* ViewController.swift in Sources */,
 				3A45291721B5A72E00AC425E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +294,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3A45291A21B5A72E00AC425E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A45291B21B5A72E00AC425E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3A45291F21B5A73000AC425E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -358,10 +423,12 @@
 		};
 		3A45293121B5A73100AC425E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EECC26F89F9E024FE20E0671 /* Pods-HastenSports.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HastenSports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,16 +436,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.denis.HastenSports;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3A45293221B5A73100AC425E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09B70067993383986CE08EF8 /* Pods-HastenSports.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HastenSports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.denis.HastenSports;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
