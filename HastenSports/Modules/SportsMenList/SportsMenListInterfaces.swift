@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import Alamofire
 
 enum SportsMenListNavigationOption {
 }
@@ -18,10 +19,18 @@ protocol SportsMenListWireframeInterface: WireframeInterface {
 }
 
 protocol SportsMenListViewInterface: ViewInterface {
+    func reloadData()
 }
 
 protocol SportsMenListPresenterInterface: PresenterInterface {
+    func startFechData()
+    func numberOfSections() -> Int
+    func numberOfItems() -> Int
+    func item(at indexpath: IndexPath) -> Player
+    func didSelectItem(at indexPath: IndexPath)
 }
 
 protocol SportsMenListInteractorInterface: InteractorInterface {
+    @discardableResult
+    func getSportsMenList(_ completion: @escaping SportsMenListCompletionBlock) -> DataRequest
 }

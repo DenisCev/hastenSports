@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import Alamofire
 
 final class SportsMenListPresenter {
 
@@ -17,7 +18,8 @@ final class SportsMenListPresenter {
     private unowned var _view: SportsMenListViewInterface
     private var _interactor: SportsMenListInteractorInterface
     private var _wireframe: SportsMenListWireframeInterface
-
+    private var _players: [Player] = [] { didSet{_view.reloadData()} }
+    private var _playerSections: PlayerList = []
     // MARK: - Lifecycle -
 
     init(wireframe: SportsMenListWireframeInterface, view: SportsMenListViewInterface, interactor: SportsMenListInteractorInterface) {
@@ -30,7 +32,41 @@ final class SportsMenListPresenter {
 // MARK: - Extensions -
 
 extension SportsMenListPresenter: SportsMenListPresenterInterface {
-    func viewDidLoad() {
+    func startFechData() {
+        _interactor.getSportsMenList(){ [weak self] (response) -> (Void) in
+            self?._handleSportsMenListResult(response.result)
+        }
+    }
+    
+    func numberOfSections() -> Int {
+        return _playerSections.count
+    }
+    
+    func numberOfItems() -> Int {
+        return _players.count
+    }
+    
+    func item(at indexpath: IndexPath) -> Player {
+        return _players[indexpath.row]
+    }
+    
+    func didSelectItem(at indexPath: IndexPath) {
         
+    }
+    
+    func viewDidLoad() {
+        startFechData()
+    }
+    
+    // MARK: Utility
+    
+    func _handleSportsMenListResult(_ result: Result<PlayerListElement>) {
+        switch result {
+        case .success (let listObject):
+            _players = listObject.players!
+            _playerSections = [listObject]
+        case .failure(let error):
+            _wireframe.showErrorAlert(with: error.message)
+        }
     }
 }

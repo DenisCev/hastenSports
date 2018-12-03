@@ -28,4 +28,8 @@ final class SportsMenListViewController: UIViewController {
 // MARK: - Extensions -
 
 extension SportsMenListViewController: SportsMenListViewInterface {
+    func reloadData() {
+        
+    }
+    
 }

@@ -12,5 +12,5 @@ struct APIConstants {
     
     static let AuthorizationHeader = "Authorization"
     static let URLBase = "https://api.myjson.com"
-    static let ImageOfTheDay = "/bins/66851"
+    static let SportsMenJSON = "/bins/66851"
 }
