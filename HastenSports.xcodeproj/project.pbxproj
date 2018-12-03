@@ -13,6 +13,17 @@
 		3A45292121B5A73000AC425E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A45291F21B5A73000AC425E /* LaunchScreen.storyboard */; };
 		3A45292C21B5A73100AC425E /* HastenSportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45292B21B5A73100AC425E /* HastenSportsTests.swift */; };
 		3A45293721B5A81400AC425E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3A45293621B5A81400AC425E /* Podfile */; };
+		3A85AE7321B5B0740066842C /* SportsMenList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A85AE6D21B5B0740066842C /* SportsMenList.storyboard */; };
+		3A85AE7421B5B0740066842C /* SportsMenListInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE6E21B5B0740066842C /* SportsMenListInterfaces.swift */; };
+		3A85AE7521B5B0740066842C /* SportsMenListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE6F21B5B0740066842C /* SportsMenListPresenter.swift */; };
+		3A85AE7621B5B0740066842C /* SportsMenListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7021B5B0740066842C /* SportsMenListViewController.swift */; };
+		3A85AE7721B5B0740066842C /* SportsMenListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7121B5B0740066842C /* SportsMenListInteractor.swift */; };
+		3A85AE7821B5B0740066842C /* SportsMenListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7221B5B0740066842C /* SportsMenListWireframe.swift */; };
+		3A85AE8121B5B1130066842C /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7C21B5B1130066842C /* BaseWireframe.swift */; };
+		3A85AE8221B5B1130066842C /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7D21B5B1130066842C /* UIStoryboardExtension.swift */; };
+		3A85AE8321B5B1130066842C /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7E21B5B1130066842C /* PresenterInterface.swift */; };
+		3A85AE8421B5B1130066842C /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7F21B5B1130066842C /* ViewInterface.swift */; };
+		3A85AE8521B5B1130066842C /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8021B5B1130066842C /* InteractorInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +47,17 @@
 		3A45292B21B5A73100AC425E /* HastenSportsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastenSportsTests.swift; sourceTree = "<group>"; };
 		3A45292D21B5A73100AC425E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A45293621B5A81400AC425E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3A85AE6D21B5B0740066842C /* SportsMenList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SportsMenList.storyboard; sourceTree = "<group>"; };
+		3A85AE6E21B5B0740066842C /* SportsMenListInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMenListInterfaces.swift; sourceTree = "<group>"; };
+		3A85AE6F21B5B0740066842C /* SportsMenListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMenListPresenter.swift; sourceTree = "<group>"; };
+		3A85AE7021B5B0740066842C /* SportsMenListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMenListViewController.swift; sourceTree = "<group>"; };
+		3A85AE7121B5B0740066842C /* SportsMenListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMenListInteractor.swift; sourceTree = "<group>"; };
+		3A85AE7221B5B0740066842C /* SportsMenListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMenListWireframe.swift; sourceTree = "<group>"; };
+		3A85AE7C21B5B1130066842C /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		3A85AE7D21B5B1130066842C /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		3A85AE7E21B5B1130066842C /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		3A85AE7F21B5B1130066842C /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		3A85AE8021B5B1130066842C /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
 		6BEE0EB6A412378CC2722818 /* Pods_HastenSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECC26F89F9E024FE20E0671 /* Pods-HastenSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSports.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HastenSports/Pods-HastenSports.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +105,7 @@
 		3A45291521B5A72E00AC425E /* HastenSports */ = {
 			isa = PBXGroup;
 			children = (
+				3A85AE6B21B5B0370066842C /* Modules */,
 				3A45291621B5A72E00AC425E /* AppDelegate.swift */,
 				3A45291D21B5A73000AC425E /* Assets.xcassets */,
 				3A45291F21B5A73000AC425E /* LaunchScreen.storyboard */,
@@ -98,6 +121,42 @@
 				3A45292D21B5A73100AC425E /* Info.plist */,
 			);
 			path = HastenSportsTests;
+			sourceTree = "<group>";
+		};
+		3A85AE6B21B5B0370066842C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3A85AE7B21B5B1130066842C /* Base VIPER Interfaces V2 */,
+				3A85AE6C21B5B0490066842C /* SportsMenList */,
+			);
+			name = Modules;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3A85AE6C21B5B0490066842C /* SportsMenList */ = {
+			isa = PBXGroup;
+			children = (
+				3A85AE6D21B5B0740066842C /* SportsMenList.storyboard */,
+				3A85AE6E21B5B0740066842C /* SportsMenListInterfaces.swift */,
+				3A85AE6F21B5B0740066842C /* SportsMenListPresenter.swift */,
+				3A85AE7021B5B0740066842C /* SportsMenListViewController.swift */,
+				3A85AE7121B5B0740066842C /* SportsMenListInteractor.swift */,
+				3A85AE7221B5B0740066842C /* SportsMenListWireframe.swift */,
+			);
+			path = SportsMenList;
+			sourceTree = "<group>";
+		};
+		3A85AE7B21B5B1130066842C /* Base VIPER Interfaces V2 */ = {
+			isa = PBXGroup;
+			children = (
+				3A85AE7C21B5B1130066842C /* BaseWireframe.swift */,
+				3A85AE7D21B5B1130066842C /* UIStoryboardExtension.swift */,
+				3A85AE7E21B5B1130066842C /* PresenterInterface.swift */,
+				3A85AE7F21B5B1130066842C /* ViewInterface.swift */,
+				3A85AE8021B5B1130066842C /* InteractorInterface.swift */,
+			);
+			name = "Base VIPER Interfaces V2";
+			path = "../../../iOS-VIPER-Xcode-Templates-master/Base VIPER Interfaces V2";
 			sourceTree = "<group>";
 		};
 		4D1F0AD6A9134F79CFEA95E9 /* Pods */ = {
@@ -202,6 +261,7 @@
 			files = (
 				3A45293721B5A81400AC425E /* Podfile in Resources */,
 				3A45292121B5A73000AC425E /* LaunchScreen.storyboard in Resources */,
+				3A85AE7321B5B0740066842C /* SportsMenList.storyboard in Resources */,
 				3A45291E21B5A73000AC425E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +286,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HastenSports/Pods-HastenSports-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
@@ -234,6 +295,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
@@ -271,7 +333,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A85AE8521B5B1130066842C /* InteractorInterface.swift in Sources */,
+				3A85AE8421B5B1130066842C /* ViewInterface.swift in Sources */,
+				3A85AE7821B5B0740066842C /* SportsMenListWireframe.swift in Sources */,
 				3A45291721B5A72E00AC425E /* AppDelegate.swift in Sources */,
+				3A85AE8221B5B1130066842C /* UIStoryboardExtension.swift in Sources */,
+				3A85AE7521B5B0740066842C /* SportsMenListPresenter.swift in Sources */,
+				3A85AE7721B5B0740066842C /* SportsMenListInteractor.swift in Sources */,
+				3A85AE8121B5B1130066842C /* BaseWireframe.swift in Sources */,
+				3A85AE7621B5B0740066842C /* SportsMenListViewController.swift in Sources */,
+				3A85AE7421B5B0740066842C /* SportsMenListInterfaces.swift in Sources */,
+				3A85AE8321B5B1130066842C /* PresenterInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
