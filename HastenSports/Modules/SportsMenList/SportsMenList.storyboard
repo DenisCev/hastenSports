@@ -37,27 +37,27 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wiV-5L-m0f">
-                                                    <rect key="frame" x="105" y="11" width="250" height="70"/>
+                                                    <rect key="frame" x="105" y="11" width="250" height="78"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="oBL-mr-aTb">
                                                             <rect key="frame" x="0.0" y="0.0" width="250" height="20.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSB-0h-3iz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="138" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="156.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsv-QN-nOr">
-                                                                    <rect key="frame" x="138" y="0.0" width="112" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <rect key="frame" x="156.5" y="0.0" width="93.5" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWf-eH-sFL">
-                                                            <rect key="frame" x="0.0" y="50.5" width="250" height="19.5"/>
+                                                            <rect key="frame" x="0.0" y="50.5" width="250" height="27.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -67,8 +67,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="dqH-gy-kXG" firstAttribute="leading" secondItem="05v-Ea-qiD" secondAttribute="leadingMargin" id="0Gp-E6-Cuw"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wiV-5L-m0f" secondAttribute="bottom" id="7Be-69-KPD"/>
                                                 <constraint firstItem="wiV-5L-m0f" firstAttribute="leading" secondItem="dqH-gy-kXG" secondAttribute="trailing" constant="20" id="9fh-xE-xjI"/>
-                                                <constraint firstItem="wiV-5L-m0f" firstAttribute="height" secondItem="dqH-gy-kXG" secondAttribute="height" id="HpM-yv-YQG"/>
                                                 <constraint firstAttribute="trailing" secondItem="wiV-5L-m0f" secondAttribute="trailing" constant="20" id="fXh-Xl-bED"/>
                                                 <constraint firstItem="dqH-gy-kXG" firstAttribute="top" secondItem="05v-Ea-qiD" secondAttribute="topMargin" id="fbE-wz-B1j"/>
                                                 <constraint firstItem="wiV-5L-m0f" firstAttribute="top" secondItem="05v-Ea-qiD" secondAttribute="topMargin" id="kyA-bG-zp4"/>

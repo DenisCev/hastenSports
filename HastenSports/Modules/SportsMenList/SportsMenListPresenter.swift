@@ -33,6 +33,10 @@ final class SportsMenListPresenter {
 // MARK: - Extensions -
 
 extension SportsMenListPresenter: SportsMenListPresenterInterface {
+    func section(at indexPath: IndexPath) -> PlayerListElement {
+        return _playerSections[indexPath.row]
+    }
+    
     func startFechData() {
         _interactor.getSportsMenList(){ [weak self] (response) -> (Void) in
             self?._handleSportsMenListResult(response.result)
@@ -47,8 +51,8 @@ extension SportsMenListPresenter: SportsMenListPresenterInterface {
         return _players.count
     }
     
-    func item(at indexpath: IndexPath) -> Player {
-        return _players[indexpath.row]
+    func item(at indexPath: IndexPath) -> Player {
+        return _players[indexPath.row]
     }
     
     func didSelectItem(at indexPath: IndexPath) {

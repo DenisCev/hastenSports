@@ -15,7 +15,10 @@ class SportsMenListCell: UITableViewCell {
     @IBOutlet weak var sportMenDate: UILabel!
     @IBOutlet weak var sportMenSurName: UILabel!
     
-    func configure(with: Player){
-        
+    func configure(with item: Player){
+        //sportMenImage.image = 
+        sportMenName.text = item.name
+        sportMenDate.text = item.date
+        sportMenSurName.text = item.surname
     }
 }

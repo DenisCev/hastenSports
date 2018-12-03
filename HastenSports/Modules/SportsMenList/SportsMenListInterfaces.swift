@@ -25,8 +25,9 @@ protocol SportsMenListViewInterface: ViewInterface {
 protocol SportsMenListPresenterInterface: PresenterInterface {
     func startFechData()
     func numberOfSections() -> Int
+    func section(at indexPath: IndexPath) -> PlayerListElement
     func numberOfItems() -> Int
-    func item(at indexpath: IndexPath) -> Player
+    func item(at indexPath: IndexPath) -> Player
     func didSelectItem(at indexPath: IndexPath)
 }
 
