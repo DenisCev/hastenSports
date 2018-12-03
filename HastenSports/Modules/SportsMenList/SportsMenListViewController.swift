@@ -32,13 +32,15 @@ final class SportsMenListViewController: UIViewController {
 
 extension SportsMenListViewController: SportsMenListViewInterface {
     func reloadData() {
-        
+        tableView.reloadData()
     }
     
 }
 
 extension SportsMenListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelectItem(at: indexPath)
+    }
 }
 
 extension SportsMenListViewController: UITableViewDataSource {
