@@ -30,4 +30,7 @@ final class SportsMenListPresenter {
 // MARK: - Extensions -
 
 extension SportsMenListPresenter: SportsMenListPresenterInterface {
+    func viewDidLoad() {
+        
+    }
 }
