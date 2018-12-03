@@ -19,11 +19,6 @@
 		3A85AE7621B5B0740066842C /* SportsMenListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7021B5B0740066842C /* SportsMenListViewController.swift */; };
 		3A85AE7721B5B0740066842C /* SportsMenListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7121B5B0740066842C /* SportsMenListInteractor.swift */; };
 		3A85AE7821B5B0740066842C /* SportsMenListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7221B5B0740066842C /* SportsMenListWireframe.swift */; };
-		3A85AE8121B5B1130066842C /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7C21B5B1130066842C /* BaseWireframe.swift */; };
-		3A85AE8221B5B1130066842C /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7D21B5B1130066842C /* UIStoryboardExtension.swift */; };
-		3A85AE8321B5B1130066842C /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7E21B5B1130066842C /* PresenterInterface.swift */; };
-		3A85AE8421B5B1130066842C /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE7F21B5B1130066842C /* ViewInterface.swift */; };
-		3A85AE8521B5B1130066842C /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8021B5B1130066842C /* InteractorInterface.swift */; };
 		3A85AE8C21B5B3150066842C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8721B5B3150066842C /* Section.swift */; };
 		3A85AE8D21B5B3150066842C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8821B5B3150066842C /* APIError.swift */; };
 		3A85AE8E21B5B3150066842C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8921B5B3150066842C /* APIConstants.swift */; };
@@ -31,6 +26,11 @@
 		3A85AE9021B5B3150066842C /* SportsMenListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8B21B5B3150066842C /* SportsMenListNavigationController.swift */; };
 		3A85AE9321B5B55F0066842C /* PlayerListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE9221B5B55F0066842C /* PlayerListElement.swift */; };
 		3A85AE9521B5B58B0066842C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE9421B5B58B0066842C /* Player.swift */; };
+		3AFC8C8521B5BD24004EC416 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC8C8021B5BD24004EC416 /* BaseWireframe.swift */; };
+		3AFC8C8621B5BD24004EC416 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC8C8121B5BD24004EC416 /* UIStoryboardExtension.swift */; };
+		3AFC8C8721B5BD24004EC416 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC8C8221B5BD24004EC416 /* PresenterInterface.swift */; };
+		3AFC8C8821B5BD24004EC416 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC8C8321B5BD24004EC416 /* ViewInterface.swift */; };
+		3AFC8C8921B5BD24004EC416 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC8C8421B5BD24004EC416 /* InteractorInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,11 +60,6 @@
 		3A85AE7021B5B0740066842C /* SportsMenListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMenListViewController.swift; sourceTree = "<group>"; };
 		3A85AE7121B5B0740066842C /* SportsMenListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMenListInteractor.swift; sourceTree = "<group>"; };
 		3A85AE7221B5B0740066842C /* SportsMenListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMenListWireframe.swift; sourceTree = "<group>"; };
-		3A85AE7C21B5B1130066842C /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
-		3A85AE7D21B5B1130066842C /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
-		3A85AE7E21B5B1130066842C /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
-		3A85AE7F21B5B1130066842C /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
-		3A85AE8021B5B1130066842C /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
 		3A85AE8721B5B3150066842C /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Section.swift; path = ../../../../rssNasa/rssNasa/Shared/Section.swift; sourceTree = "<group>"; };
 		3A85AE8821B5B3150066842C /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIError.swift; path = ../../../../rssNasa/rssNasa/Shared/APIError.swift; sourceTree = "<group>"; };
 		3A85AE8921B5B3150066842C /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIConstants.swift; path = ../../../../rssNasa/rssNasa/Shared/APIConstants.swift; sourceTree = "<group>"; };
@@ -72,6 +67,11 @@
 		3A85AE8B21B5B3150066842C /* SportsMenListNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SportsMenListNavigationController.swift; path = ../../../../rssNasa/rssNasa/Shared/SportsMenListNavigationController.swift; sourceTree = "<group>"; };
 		3A85AE9221B5B55F0066842C /* PlayerListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListElement.swift; sourceTree = "<group>"; };
 		3A85AE9421B5B58B0066842C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3AFC8C8021B5BD24004EC416 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		3AFC8C8121B5BD24004EC416 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		3AFC8C8221B5BD24004EC416 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		3AFC8C8321B5BD24004EC416 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		3AFC8C8421B5BD24004EC416 /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
 		6BEE0EB6A412378CC2722818 /* Pods_HastenSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECC26F89F9E024FE20E0671 /* Pods-HastenSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSports.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HastenSports/Pods-HastenSports.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,7 +140,7 @@
 		3A85AE6B21B5B0370066842C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3A85AE7B21B5B1130066842C /* Base VIPER Interfaces V2 */,
+				3AFC8C7F21B5BD24004EC416 /* Base VIPER Interfaces V2 */,
 				3A85AE8621B5B2980066842C /* Shared */,
 				3A85AE6C21B5B0490066842C /* SportsMenList */,
 			);
@@ -160,19 +160,6 @@
 			);
 			name = SportsMenList;
 			path = ../Modules/SportsMenList;
-			sourceTree = "<group>";
-		};
-		3A85AE7B21B5B1130066842C /* Base VIPER Interfaces V2 */ = {
-			isa = PBXGroup;
-			children = (
-				3A85AE7C21B5B1130066842C /* BaseWireframe.swift */,
-				3A85AE7D21B5B1130066842C /* UIStoryboardExtension.swift */,
-				3A85AE7E21B5B1130066842C /* PresenterInterface.swift */,
-				3A85AE7F21B5B1130066842C /* ViewInterface.swift */,
-				3A85AE8021B5B1130066842C /* InteractorInterface.swift */,
-			);
-			name = "Base VIPER Interfaces V2";
-			path = "../../../iOS-VIPER-Xcode-Templates-master/Base VIPER Interfaces V2";
 			sourceTree = "<group>";
 		};
 		3A85AE8621B5B2980066842C /* Shared */ = {
@@ -195,6 +182,18 @@
 				3A85AE9421B5B58B0066842C /* Player.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3AFC8C7F21B5BD24004EC416 /* Base VIPER Interfaces V2 */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC8C8021B5BD24004EC416 /* BaseWireframe.swift */,
+				3AFC8C8121B5BD24004EC416 /* UIStoryboardExtension.swift */,
+				3AFC8C8221B5BD24004EC416 /* PresenterInterface.swift */,
+				3AFC8C8321B5BD24004EC416 /* ViewInterface.swift */,
+				3AFC8C8421B5BD24004EC416 /* InteractorInterface.swift */,
+			);
+			path = "Base VIPER Interfaces V2";
 			sourceTree = "<group>";
 		};
 		4D1F0AD6A9134F79CFEA95E9 /* Pods */ = {
@@ -371,22 +370,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A85AE8521B5B1130066842C /* InteractorInterface.swift in Sources */,
-				3A85AE8421B5B1130066842C /* ViewInterface.swift in Sources */,
 				3A85AE7821B5B0740066842C /* SportsMenListWireframe.swift in Sources */,
 				3A45291721B5A72E00AC425E /* AppDelegate.swift in Sources */,
-				3A85AE8221B5B1130066842C /* UIStoryboardExtension.swift in Sources */,
 				3A85AE7521B5B0740066842C /* SportsMenListPresenter.swift in Sources */,
 				3A85AE7721B5B0740066842C /* SportsMenListInteractor.swift in Sources */,
 				3A85AE8F21B5B3150066842C /* ErrorMessage.swift in Sources */,
-				3A85AE8121B5B1130066842C /* BaseWireframe.swift in Sources */,
 				3A85AE8E21B5B3150066842C /* APIConstants.swift in Sources */,
+				3AFC8C8921B5BD24004EC416 /* InteractorInterface.swift in Sources */,
 				3A85AE7621B5B0740066842C /* SportsMenListViewController.swift in Sources */,
+				3AFC8C8621B5BD24004EC416 /* UIStoryboardExtension.swift in Sources */,
 				3A85AE8C21B5B3150066842C /* Section.swift in Sources */,
 				3A85AE9021B5B3150066842C /* SportsMenListNavigationController.swift in Sources */,
 				3A85AE7421B5B0740066842C /* SportsMenListInterfaces.swift in Sources */,
-				3A85AE8321B5B1130066842C /* PresenterInterface.swift in Sources */,
+				3AFC8C8821B5BD24004EC416 /* ViewInterface.swift in Sources */,
 				3A85AE8D21B5B3150066842C /* APIError.swift in Sources */,
+				3AFC8C8721B5BD24004EC416 /* PresenterInterface.swift in Sources */,
+				3AFC8C8521B5BD24004EC416 /* BaseWireframe.swift in Sources */,
 				3A85AE9521B5B58B0066842C /* Player.swift in Sources */,
 				3A85AE9321B5B55F0066842C /* PlayerListElement.swift in Sources */,
 			);
