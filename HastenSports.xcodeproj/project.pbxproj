@@ -29,6 +29,8 @@
 		3A85AE8E21B5B3150066842C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8921B5B3150066842C /* APIConstants.swift */; };
 		3A85AE8F21B5B3150066842C /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8A21B5B3150066842C /* ErrorMessage.swift */; };
 		3A85AE9021B5B3150066842C /* SportsMenListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE8B21B5B3150066842C /* SportsMenListNavigationController.swift */; };
+		3A85AE9321B5B55F0066842C /* PlayerListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE9221B5B55F0066842C /* PlayerListElement.swift */; };
+		3A85AE9521B5B58B0066842C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85AE9421B5B58B0066842C /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		3A85AE8921B5B3150066842C /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIConstants.swift; path = ../../../../rssNasa/rssNasa/Shared/APIConstants.swift; sourceTree = "<group>"; };
 		3A85AE8A21B5B3150066842C /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorMessage.swift; path = ../../../../rssNasa/rssNasa/Shared/ErrorMessage.swift; sourceTree = "<group>"; };
 		3A85AE8B21B5B3150066842C /* SportsMenListNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SportsMenListNavigationController.swift; path = ../../../../rssNasa/rssNasa/Shared/SportsMenListNavigationController.swift; sourceTree = "<group>"; };
+		3A85AE9221B5B55F0066842C /* PlayerListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListElement.swift; sourceTree = "<group>"; };
+		3A85AE9421B5B58B0066842C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		6BEE0EB6A412378CC2722818 /* Pods_HastenSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECC26F89F9E024FE20E0671 /* Pods-HastenSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSports.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HastenSports/Pods-HastenSports.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +151,7 @@
 		3A85AE6C21B5B0490066842C /* SportsMenList */ = {
 			isa = PBXGroup;
 			children = (
+				3A85AE9121B5B5320066842C /* Models */,
 				3A85AE6D21B5B0740066842C /* SportsMenList.storyboard */,
 				3A85AE6E21B5B0740066842C /* SportsMenListInterfaces.swift */,
 				3A85AE6F21B5B0740066842C /* SportsMenListPresenter.swift */,
@@ -180,6 +185,15 @@
 				3A85AE8721B5B3150066842C /* Section.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		3A85AE9121B5B5320066842C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A85AE9221B5B55F0066842C /* PlayerListElement.swift */,
+				3A85AE9421B5B58B0066842C /* Player.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4D1F0AD6A9134F79CFEA95E9 /* Pods */ = {
@@ -372,6 +386,8 @@
 				3A85AE7421B5B0740066842C /* SportsMenListInterfaces.swift in Sources */,
 				3A85AE8321B5B1130066842C /* PresenterInterface.swift in Sources */,
 				3A85AE8D21B5B3150066842C /* APIError.swift in Sources */,
+				3A85AE9521B5B58B0066842C /* Player.swift in Sources */,
+				3A85AE9321B5B55F0066842C /* PlayerListElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
