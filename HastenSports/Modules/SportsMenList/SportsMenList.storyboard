@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SportMenListCell" rowHeight="100" id="GOu-VQ-grH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SportsMenListCell" rowHeight="100" id="GOu-VQ-grH" customClass="SportsMenListCell" customModule="HastenSports" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GOu-VQ-grH" id="05v-Ea-qiD">
@@ -74,6 +74,12 @@
                                                 <constraint firstItem="wiV-5L-m0f" firstAttribute="top" secondItem="05v-Ea-qiD" secondAttribute="topMargin" id="kyA-bG-zp4"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="sportMenDate" destination="tsv-QN-nOr" id="bLS-VM-UcL"/>
+                                            <outlet property="sportMenImage" destination="dqH-gy-kXG" id="Y9V-nu-w2m"/>
+                                            <outlet property="sportMenName" destination="iSB-0h-3iz" id="Wtu-jQ-Dny"/>
+                                            <outlet property="sportMenSurName" destination="ZWf-eH-sFL" id="b04-cR-BpO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -88,6 +94,9 @@
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sport Men List" id="LZZ-x1-HXd"/>
+                    <connections>
+                        <outlet property="tableView" destination="Z21-h6-Ac3" id="H4s-bP-VEO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

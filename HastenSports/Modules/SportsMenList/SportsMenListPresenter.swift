@@ -20,6 +20,7 @@ final class SportsMenListPresenter {
     private var _wireframe: SportsMenListWireframeInterface
     private var _players: [Player] = [] { didSet{_view.reloadData()} }
     private var _playerSections: PlayerList = []
+    
     // MARK: - Lifecycle -
 
     init(wireframe: SportsMenListWireframeInterface, view: SportsMenListViewInterface, interactor: SportsMenListInteractorInterface) {
@@ -60,11 +61,16 @@ extension SportsMenListPresenter: SportsMenListPresenterInterface {
     
     // MARK: Utility
     
-    func _handleSportsMenListResult(_ result: Result<PlayerListElement>) {
+    func _handleSportsMenListResult(_ result: Result<PlayerList>) {
         switch result {
         case .success (let listObject):
-            _players = listObject.players!
-            _playerSections = [listObject]
+            print(listObject[0])
+            _playerSections = listObject
+            
+            for section in listObject {
+                _players = section.players!
+            }
+            
         case .failure(let error):
             _wireframe.showErrorAlert(with: error.message)
         }

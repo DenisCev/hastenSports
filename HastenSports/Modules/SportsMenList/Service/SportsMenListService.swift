@@ -9,14 +9,14 @@
 import Alamofire
 import AlamofireObjectMapper
 
-typealias SportsMenListCompletionBlock = (DataResponse<PlayerListElement>) -> (Void)
+typealias SportsMenListCompletionBlock = (DataResponse<PlayerList>) -> (Void)
 
 class SportsMenListService: NSObject {
     @discardableResult
     func getSportsMenList (_ completion: @escaping SportsMenListCompletionBlock) -> DataRequest {
         
         let url = "\(APIConstants.URLBase)\(APIConstants.SportsMenJSON)"
-        let response = Alamofire.request(url).responseObject(completionHandler: completion)
+        let response = Alamofire.request(url).responseArray(completionHandler: completion)
         return response
     }
 }

@@ -15,12 +15,15 @@ final class SportsMenListViewController: UIViewController {
     // MARK: - Public properties -
 
     var presenter: SportsMenListPresenterInterface!
-
+    @IBOutlet weak var tableView: UITableView!
+    
     // MARK: - Lifecycle -
 
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 	
 }
@@ -31,5 +34,28 @@ extension SportsMenListViewController: SportsMenListViewInterface {
     func reloadData() {
         
     }
+    
+}
+
+extension SportsMenListViewController: UITableViewDelegate {
+    
+}
+
+extension SportsMenListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return presenter.numberOfItems()
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return presenter.numberOfSections()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SportsMenListCell", for: indexPath) as! SportsMenListCell
+        let item = presenter.item(at: indexPath)
+        cell.configure(with: item)
+        return cell
+    }
+    
     
 }

@@ -32,6 +32,7 @@
 		3AFC8C9321B5BE3A004EC416 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC8C8E21B5BE3A004EC416 /* Section.swift */; };
 		3AFC8C9421B5BE3A004EC416 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC8C8F21B5BE3A004EC416 /* APIConstants.swift */; };
 		3AFC8C9721B5DAD5004EC416 /* SportsMenListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC8C9621B5DAD5004EC416 /* SportsMenListService.swift */; };
+		3AFC8C9A21B5ECF5004EC416 /* SportsMenListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC8C9921B5ECF5004EC416 /* SportsMenListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		3AFC8C8E21B5BE3A004EC416 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		3AFC8C8F21B5BE3A004EC416 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		3AFC8C9621B5DAD5004EC416 /* SportsMenListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMenListService.swift; sourceTree = "<group>"; };
+		3AFC8C9921B5ECF5004EC416 /* SportsMenListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMenListCell.swift; sourceTree = "<group>"; };
 		6BEE0EB6A412378CC2722818 /* Pods_HastenSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECC26F89F9E024FE20E0671 /* Pods-HastenSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSports.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HastenSports/Pods-HastenSports.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +154,7 @@
 		3A85AE6C21B5B0490066842C /* SportsMenList */ = {
 			isa = PBXGroup;
 			children = (
+				3AFC8C9821B5ECD9004EC416 /* Cell */,
 				3AFC8C9521B5DA87004EC416 /* Service */,
 				3A85AE9121B5B5320066842C /* Models */,
 				3A85AE6D21B5B0740066842C /* SportsMenList.storyboard */,
@@ -204,6 +207,14 @@
 				3AFC8C9621B5DAD5004EC416 /* SportsMenListService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		3AFC8C9821B5ECD9004EC416 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC8C9921B5ECF5004EC416 /* SportsMenListCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		4D1F0AD6A9134F79CFEA95E9 /* Pods */ = {
@@ -389,6 +400,7 @@
 				3AFC8C8921B5BD24004EC416 /* InteractorInterface.swift in Sources */,
 				3A85AE7621B5B0740066842C /* SportsMenListViewController.swift in Sources */,
 				3AFC8C8621B5BD24004EC416 /* UIStoryboardExtension.swift in Sources */,
+				3AFC8C9A21B5ECF5004EC416 /* SportsMenListCell.swift in Sources */,
 				3A85AE7421B5B0740066842C /* SportsMenListInterfaces.swift in Sources */,
 				3AFC8C8821B5BD24004EC416 /* ViewInterface.swift in Sources */,
 				3AFC8C8721B5BD24004EC416 /* PresenterInterface.swift in Sources */,
