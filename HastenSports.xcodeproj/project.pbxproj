@@ -140,12 +140,11 @@
 		3A85AE6B21B5B0370066842C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3A85AE8621B5B2980066842C /* Shared */,
 				3A85AE7B21B5B1130066842C /* Base VIPER Interfaces V2 */,
+				3A85AE8621B5B2980066842C /* Shared */,
 				3A85AE6C21B5B0490066842C /* SportsMenList */,
 			);
-			name = Modules;
-			path = "New Group";
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		3A85AE6C21B5B0490066842C /* SportsMenList */ = {
@@ -159,7 +158,8 @@
 				3A85AE7121B5B0740066842C /* SportsMenListInteractor.swift */,
 				3A85AE7221B5B0740066842C /* SportsMenListWireframe.swift */,
 			);
-			path = SportsMenList;
+			name = SportsMenList;
+			path = ../Modules/SportsMenList;
 			sourceTree = "<group>";
 		};
 		3A85AE7B21B5B1130066842C /* Base VIPER Interfaces V2 */ = {
@@ -184,7 +184,8 @@
 				3A85AE8B21B5B3150066842C /* SportsMenListNavigationController.swift */,
 				3A85AE8721B5B3150066842C /* Section.swift */,
 			);
-			path = Shared;
+			name = Shared;
+			path = ../Modules/Shared;
 			sourceTree = "<group>";
 		};
 		3A85AE9121B5B5320066842C /* Models */ = {
