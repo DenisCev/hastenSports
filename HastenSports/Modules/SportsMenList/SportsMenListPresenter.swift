@@ -18,7 +18,7 @@ final class SportsMenListPresenter {
     private unowned var _view: SportsMenListViewInterface
     private var _interactor: SportsMenListInteractorInterface
     private var _wireframe: SportsMenListWireframeInterface
-    private var _playerSections: [Section<PlayerListElement>] = []
+    private var _playerSections: [Section<PlayerListElement>] = [] {didSet{_view.reloadData()}}
     
     // MARK: - Lifecycle -
 
@@ -58,7 +58,7 @@ extension SportsMenListPresenter: SportsMenListPresenterInterface {
     func item(at indexPath: IndexPath) -> Player {
         
         if (indexPath.row > _playerSections[indexPath.section].items.count - 1){
-            return Player(image: "T##String?", surname: "T##String?", name: "T##String?", date: "T##String?")
+            return Player(image: "PlaceHolder", surname: "PlaceHolder", name: "PlaceHolder", date: "PlaceHolder")
         }
         
         return _playerSections[indexPath.section].items[indexPath.row]
@@ -77,6 +77,7 @@ extension SportsMenListPresenter: SportsMenListPresenterInterface {
     func _handleSportsMenListResult(_ result: Result<PlayerList>) {
         switch result {
         case .success (let sections):
+            _playerSections.removeAll()
             for playersList in sections {
                 _playerSections.append(Section.init(items: playersList.players!, header: playersList.title))
             }
@@ -84,4 +85,6 @@ extension SportsMenListPresenter: SportsMenListPresenterInterface {
             _wireframe.showErrorAlert(with: error.message)
         }
     }
+    
+    
 }

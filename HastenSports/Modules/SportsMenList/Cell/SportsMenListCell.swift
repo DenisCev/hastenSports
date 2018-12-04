@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class SportsMenListCell: UITableViewCell {
     
@@ -16,7 +17,9 @@ class SportsMenListCell: UITableViewCell {
     @IBOutlet weak var sportMenSurName: UILabel!
     
     func configure(with item: Player){
-        //sportMenImage.image = 
+        if(item.image != nil && item.image != ""){
+            sportMenImage.af_setImage(withURL: URL(string: item.image!)!)
+        }
         sportMenName.text = item.name
         sportMenDate.text = item.date
         sportMenSurName.text = item.surname

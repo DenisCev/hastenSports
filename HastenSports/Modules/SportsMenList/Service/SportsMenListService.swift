@@ -19,4 +19,5 @@ class SportsMenListService: NSObject {
         let response = Alamofire.request(url).responseArray(completionHandler: completion)
         return response
     }
+    
 }
