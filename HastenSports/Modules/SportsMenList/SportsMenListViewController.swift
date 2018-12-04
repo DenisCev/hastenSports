@@ -44,10 +44,17 @@ extension SportsMenListViewController: UITableViewDelegate {
 }
 
 extension SportsMenListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let mySection = presenter.section(at: section)
+        return mySection.header
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter.numberOfItems()
     }
     
+   
     func numberOfSections(in tableView: UITableView) -> Int {
         return presenter.numberOfSections()
     }

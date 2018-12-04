@@ -18,8 +18,7 @@ final class SportsMenListPresenter {
     private unowned var _view: SportsMenListViewInterface
     private var _interactor: SportsMenListInteractorInterface
     private var _wireframe: SportsMenListWireframeInterface
-    private var _players: [Player] = [] { didSet{_view.reloadData()} }
-    private var _playerSections: PlayerList = []
+    private var _playerSections: [Section<PlayerListElement>] = []
     
     // MARK: - Lifecycle -
 
@@ -33,13 +32,11 @@ final class SportsMenListPresenter {
 // MARK: - Extensions -
 
 extension SportsMenListPresenter: SportsMenListPresenterInterface {
-    func section(at indexPath: IndexPath) -> PlayerListElement {
-        return _playerSections[indexPath.row]
-    }
     
     func startFechData() {
         _interactor.getSportsMenList(){ [weak self] (response) -> (Void) in
             self?._handleSportsMenListResult(response.result)
+            self?._view.reloadData()
         }
     }
     
@@ -47,12 +44,24 @@ extension SportsMenListPresenter: SportsMenListPresenterInterface {
         return _playerSections.count
     }
     
+    func section(at section: Int) -> Section<PlayerListElement> {
+        return _playerSections[section]
+    }
+    
     func numberOfItems() -> Int {
-        return _players.count
+        for section in _playerSections {
+            return section.items.count
+        }
+        return 0
     }
     
     func item(at indexPath: IndexPath) -> Player {
-        return _players[indexPath.row]
+        
+        if (indexPath.row > _playerSections[indexPath.section].items.count - 1){
+            return Player(image: "T##String?", surname: "T##String?", name: "T##String?", date: "T##String?")
+        }
+        
+        return _playerSections[indexPath.section].items[indexPath.row]
     }
     
     func didSelectItem(at indexPath: IndexPath) {
@@ -67,14 +76,10 @@ extension SportsMenListPresenter: SportsMenListPresenterInterface {
     
     func _handleSportsMenListResult(_ result: Result<PlayerList>) {
         switch result {
-        case .success (let listObject):
-            print(listObject[0])
-            _playerSections = listObject
-            
-            for section in listObject {
-                _players = section.players!
+        case .success (let sections):
+            for playersList in sections {
+                _playerSections.append(Section.init(items: playersList.players!, header: playersList.title))
             }
-            
         case .failure(let error):
             _wireframe.showErrorAlert(with: error.message)
         }

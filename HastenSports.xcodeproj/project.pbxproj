@@ -171,6 +171,7 @@
 		3A85AE9121B5B5320066842C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3AFC8C8E21B5BE3A004EC416 /* Section.swift */,
 				3A85AE9221B5B55F0066842C /* PlayerListElement.swift */,
 				3A85AE9421B5B58B0066842C /* Player.swift */,
 			);
@@ -195,7 +196,6 @@
 				3AFC8C8F21B5BE3A004EC416 /* APIConstants.swift */,
 				3AFC8C8B21B5BE3A004EC416 /* APIError.swift */,
 				3AFC8C8D21B5BE3A004EC416 /* ErrorMessage.swift */,
-				3AFC8C8E21B5BE3A004EC416 /* Section.swift */,
 				3AFC8C8C21B5BE3A004EC416 /* SportsMenListNavigationController.swift */,
 			);
 			path = Shared;

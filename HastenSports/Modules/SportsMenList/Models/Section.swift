@@ -10,12 +10,13 @@ import Foundation
 
 import UIKit
 
-struct Section<T> {
+struct Section<PlayerListElement> {
     var header: String?
     var footer: String?
-    var items: [T] = []
+    var items: [Player] = []
     
-    init(items: [T]) {
+    init(items: [Player], header: String?) {
+        self.header = header
         self.items = items
     }
 }
